@@ -1,0 +1,24 @@
+// Modular grid
+$base-module: 8px;
+$base-line-height: 24px;
+
+// Fonts
+$base-typeface:  'Open Sans', sans-serif;
+$base-font-size: 16px;
+
+
+// Colors
+$base-text-color: #424242;
+$note-text-color: #999;
+$link-color: #4f7faf;
+$link-over-color: #df665a;
+$button-text-color: #fff;
+$body-color: #fff;
+$border-color: #e1e1e1;
+
+// Borders
+$base-border: 1px solid $border-color;
+
+// Effects
+$link-underline-opacity: 0.5;
+$base-transition: 0.2s ease-in-out;
