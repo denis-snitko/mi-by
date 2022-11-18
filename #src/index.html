@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./style/vendors.css" />
-    <link rel="stylesheet" href="./style/main.css" />
-    <title>MI.BY | Карточка товара</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <div class="main-body">
-      @@include('modules/header/_header.html')
-      <main class="main-content">
-        <div class="container">
-          <p>main content</p>
-        </div>
-      </main>
-      @@include('modules/footer/_footer.html')
+  <link rel="stylesheet" href="./style/vendors.css" />
+  <link rel="stylesheet" href="./style/main.css" />
+  <title>MI.BY | Карточка товара</title>
+</head>
+
+<body>
+  <div class="main-body">
+    @@include('modules/header/_header.html')
+    <div class="container">
+      @@include('modules/breadcrumbs/_breadcrumbs.html')
     </div>
-    <script src="./js/vendors.js"></script>
-    <script src="./js/main.js"></script>
-  </body>
+    <main class="main-content">
+      <div class="container">
+        @@include('modules/card/_card.html')
+      </div>
+    </main>
+    @@include('modules/footer/_footer.html')
+  </div>
+  <script src="./js/vendors.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
 </html>

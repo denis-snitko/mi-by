@@ -4,14 +4,15 @@ body {
   color: $base-text-color;
 }
 
-/*
+.h1,
 h1 {
-    font-size: rem(54px);
-    line-height: $base-line-height * 3;
-    margin-bottom: $base-line-height * 2;
-    font-weight: bold;
+  font-size: rem(36px);
+  margin-bottom: $base-line-height * 2;
+  line-height: 49px;
+  font-weight: 700;
 }
 
+/*
 h2 {
     font-size: 36px;
     line-height: $base-line-height * 2;

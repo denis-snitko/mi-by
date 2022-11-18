@@ -1,0 +1,66 @@
+&__header {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba($color: $base-text-color, $alpha: 0.1);
+
+  &-badges {
+    .badge {
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-actions {
+    font-size: rem(13px);
+    line-height: 18px;
+  }
+
+  &--reviews {
+    padding-left: 10px;
+
+    a {
+      margin-top: -1px;
+      padding-left: 12px;
+    }
+  }
+
+  &--number {
+    margin-left: 40px;
+
+    span {
+      margin-left: 4px;
+      font-weight: 600;
+    }
+  }
+
+  &--favorites {
+    position: relative;
+    margin-left: 40px;
+
+    a {
+      position: relative;
+      padding-left: 26px;
+      &:before {
+        content: url(../img/icons/favorite.svg);
+        position: absolute;
+        top: 0;
+        left: 0px;
+      }
+    }
+  }
+
+  &--compare {
+    margin-left: 40px;
+
+    a {
+      position: relative;
+      padding-left: 26px;
+      &:before {
+        content: url(../img/icons/compare.svg);
+        position: absolute;
+        top: 0;
+        left: 0px;
+      }
+    }
+  }
+}

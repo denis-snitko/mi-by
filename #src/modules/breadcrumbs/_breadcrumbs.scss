@@ -1,0 +1,42 @@
+.breadcrumbs {
+  padding: 12px 0 19px 0;
+
+  color: #808080;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__item {
+    position: relative;
+    line-height: 16px;
+    white-space: nowrap;
+
+    &:after {
+      content: url(../img/icons/arrow-right.svg);
+      position: absolute;
+      top: 0;
+      right: 0;
+      
+      width: 16px;
+      height: 16px;
+    }
+
+    &:last-child {
+      color: #C5C5C5;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    & a {
+      color: #808080;
+      
+
+      &:not(last-child) {
+        margin-right: 25px;
+      }
+    }
+  }
+}
