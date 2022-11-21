@@ -1,21 +1,21 @@
 <section class="card__info">
   <div class="tabs">
-    <input class="tabs__input" id="tab-1" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-1" type="radio" name="card-info">
     <label class="tabs__label" for="tab-1">Обзоры</label>
 
-    <input class="tabs__input" id="tab-2" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-2" type="radio" name="card-info">
     <label class="tabs__label" for="tab-2">Видео-обзор продукта</label>
 
-    <input class="tabs__input" id="tab-3" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-3" type="radio" name="card-info">
     <label class="tabs__label" for="tab-3">Характеристики</label>
 
-    <input class="tabs__input" id="tab-4" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-4" type="radio" name="card-info">
     <label class="tabs__label" for="tab-4">Инструкции</label>
 
-    <input class="tabs__input" id="tab-5" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-5" type="radio" name="card-info" checked>
     <label class="tabs__label" for="tab-5">Наличие и доставка</label>
 
-    <input class="tabs__input" id="tab-6" type="radio" name="tabs" checked>
+    <input class="tabs__input" id="tab-6" type="radio" name="card-info">
     <label class="tabs__label" for="tab-6">Отзывы <span>(23)</span></label>
 
     <section id="content-1">
@@ -231,7 +231,7 @@
       <p>Инструкции</p>
     </section>
     <section id="content-5">
-      <p>Наличие и доставка</p>
+      @@include('../../../delivery/_delivery.html')
     </section>
     <section id="content-6">
       @@include('../../../reviews/_reviews.html')

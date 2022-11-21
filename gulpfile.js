@@ -47,6 +47,7 @@ const rename = require('gulp-rename')
 const uglify = require('gulp-uglify-es').default
 const changed = require('gulp-changed')
 const tinify = require('gulp-tinify')
+const ttf2woff = require('gulp-ttf2woff')
 const ttf2woff2 = require('gulp-ttf2woff2')
 const webp = require('gulp-webp')
 const smartGrid = require('smart-grid')
@@ -148,7 +149,11 @@ function grid(done) {
   done()
 }
 
-function fonts() {
+function fontsWoff() {
+  return src(path.src.fonts).pipe(ttf2woff()).pipe(dest(path.build.fonts))
+}
+
+function fontsWoff2() {
   return src(path.src.fonts).pipe(ttf2woff2()).pipe(dest(path.build.fonts))
 }
 
@@ -178,7 +183,8 @@ exports.js = js
 exports.img = img
 exports.icons = icons
 exports.svg = svg
-exports.fonts = fonts
+exports.fontsWoff = fontsWoff
+exports.fontsWoff2 = fontsWoff2
 exports.clean = clean
 exports.build = build
 exports.watch = watch

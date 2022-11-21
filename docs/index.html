@@ -93,7 +93,35 @@
 
   <section class="card__main flex">
     <div class="card__slider">
-  slider
+  <div class="swiper-container card__slider--thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/for-slider/img-thumbs-1.png" alt="#">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/for-slider/img-thumbs-2.png" alt="#">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/for-slider/img-thumbs-3.png" alt="#">
+      </div>
+      <div class="swiper-slide">4</div>
+      <div class="swiper-slide">5</div>
+      <div class="swiper-slide">6</div>
+    </div>
+  </div>
+  <div class="swiper-container card__slider--main">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">1</div>
+      <div class="swiper-slide">2</div>
+      <div class="swiper-slide">3</div>
+      <div class="swiper-slide">4</div>
+      <div class="swiper-slide">5</div>
+      <div class="swiper-slide">6</div>
+    </div>
+    <!-- Add Arrows -->
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+  </div>
 </div>
     <div class="card__features">
   <div class="card__features-item">
@@ -271,7 +299,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card__promotion-item card__promotion-item--first flex">
-            <img src="../../img/img-1.png" alt="#">
+            <img src="./img/img-1.png" alt="#">
             <div>
 
               <div class="card__promotion-item-title">Xiaomi 11T Pro, 8Gb, 128Gb</div>
@@ -279,7 +307,7 @@
             </div>
           </div>
           <div class="card__promotion-item card__promotion-item--second flex">
-            <img src="../../img/img-2.png" alt="#">
+            <img src="./img/img-2.png" alt="#">
             <div>
 
               <div class="card__promotion-item-title">Кабель Usb Type C - Usb Type C</div>
@@ -296,7 +324,7 @@
         </div>
         <div class="swiper-slide">
           <div class="card__promotion-item card__promotion-item--first flex">
-            <img src="../../img/img-1.png" alt="#">
+            <img src="./img/img-1.png" alt="#">
             <div>
 
               <div class="card__promotion-item-title">Xiaomi 11T Pro, 8Gb, 128Gb</div>
@@ -304,7 +332,7 @@
             </div>
           </div>
           <div class="card__promotion-item card__promotion-item--second flex">
-            <img src="../../img/img-2.png" alt="#">
+            <img src="./img/img-2.png" alt="#">
             <div>
 
               <div class="card__promotion-item-title">Кабель Usb Type C - Usb Type C</div>
@@ -321,7 +349,7 @@
         </div>
         <div class="swiper-slide">
           <div class="card__promotion-item card__promotion-item--first flex">
-            <img src="../../img/img-1.png" alt="#">
+            <img src="./img/img-1.png" alt="#">
             <div>
 
               <div class="card__promotion-item-title">Xiaomi 11T Pro, 8Gb, 128Gb</div>
@@ -329,7 +357,7 @@
             </div>
           </div>
           <div class="card__promotion-item card__promotion-item--second flex">
-            <img src="../../img/img-2.png" alt="#">
+            <img src="./img/img-2.png" alt="#">
             <div>
 
               <div class="card__promotion-item-title">Кабель Usb Type C - Usb Type C</div>
@@ -346,7 +374,7 @@
         </div>
         <div class="swiper-slide">
           <div class="card__promotion-item card__promotion-item--first flex">
-            <img src="../../img/img-1.png" alt="#">
+            <img src="./img/img-1.png" alt="#">
             <div>
 
               <div class="card__promotion-item-title">Xiaomi 11T Pro, 8Gb, 128Gb</div>
@@ -354,7 +382,7 @@
             </div>
           </div>
           <div class="card__promotion-item card__promotion-item--second flex">
-            <img src="../../img/img-2.png" alt="#">
+            <img src="./img/img-2.png" alt="#">
             <div>
 
               <div class="card__promotion-item-title">Кабель Usb Type C - Usb Type C</div>
@@ -376,22 +404,22 @@
 </section>
   <section class="card__info">
   <div class="tabs">
-    <input class="tabs__input" id="tab-1" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-1" type="radio" name="card-info">
     <label class="tabs__label" for="tab-1">Обзоры</label>
 
-    <input class="tabs__input" id="tab-2" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-2" type="radio" name="card-info">
     <label class="tabs__label" for="tab-2">Видео-обзор продукта</label>
 
-    <input class="tabs__input" id="tab-3" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-3" type="radio" name="card-info">
     <label class="tabs__label" for="tab-3">Характеристики</label>
 
-    <input class="tabs__input" id="tab-4" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-4" type="radio" name="card-info">
     <label class="tabs__label" for="tab-4">Инструкции</label>
 
-    <input class="tabs__input" id="tab-5" type="radio" name="tabs">
+    <input class="tabs__input" id="tab-5" type="radio" name="card-info" checked>
     <label class="tabs__label" for="tab-5">Наличие и доставка</label>
 
-    <input class="tabs__input" id="tab-6" type="radio" name="tabs" checked>
+    <input class="tabs__input" id="tab-6" type="radio" name="card-info">
     <label class="tabs__label" for="tab-6">Отзывы <span>(23)</span></label>
 
     <section id="content-1">
@@ -607,7 +635,413 @@
       <p>Инструкции</p>
     </section>
     <section id="content-5">
-      <p>Наличие и доставка</p>
+      <div class="delivery">
+  <div class="tabs delivery__tabs">
+    <input class="tabs__input" id="availability" type="radio" name="delivery" checked>
+    <label class="tabs__label" for="availability">Забрать в магазине</label>
+
+    <input class="tabs__input" id="delivery" type="radio" name="delivery">
+    <label class="tabs__label" for="delivery">Доставка на дом</label>
+
+    <div class="select-city flex items-center">
+      <div class="select-city__selected">
+        Выбран: <span>Минск</span>
+      </div>
+      <button class="select-city__btn" data="js-open-modal">Изменить город?</button>
+
+      <div class="select-city__modal modal" data="js-modal">
+        <div class="modal__body">
+          <button class="modal__close" data="js-close-modal">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="8.63611" y1="21.364" x2="21.364" y2="8.63603" stroke="white" stroke-width="2"
+                    stroke-linecap="round" />
+              <line x1="21.364" y1="21.364" x2="8.63606" y2="8.63605" stroke="white" stroke-width="2"
+                    stroke-linecap="round" />
+            </svg>
+
+          </button>
+          <div class="modal__content">
+            <div class="modal__title">
+              Выбрать город
+            </div>
+            <form class="modal__form">
+              <label class="modal__form-label" for="">
+                <input type="text" placeholder="Ваш город">
+                <button class="modal__form-button">
+                  <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8.52633" cy="7.57895" r="6.57895" stroke="#FF6700" stroke-width="2" />
+                    <line x1="14.1511" y1="12.6316" x2="16.1053" y2="14.5858" stroke="#FF6700" stroke-width="2"
+                    stroke-linecap="round" />
+                  </svg>
+                </button>
+              </label>
+
+              <div class="modal__form-wrapper">
+                <button class="modal__form-select-btn" type="button" data-city-value="Минск">Минск</button>
+                <button class="modal__form-select-btn active" type="button" data-city-value="Борисов">Борисов</button>
+                <button class="modal__form-select-btn" type="button" data-city-value="Гомель">Гомель</button>
+                <button class="modal__form-select-btn" type="button" data-city-value="Пинск">Пинск</button>
+                <button class="modal__form-select-btn" type="button" data-city-value="Новополоцк">Новополоцк</button>
+                <button class="modal__form-select-btn" type="button" data-city-value="Минск">Минск</button>
+                <button class="modal__form-select-btn" type="button" data-city-value="Борисов">Борисов</button>
+                <button class="modal__form-select-btn" type="button" data-city-value="Гомель">Гомель</button>
+                <button class="modal__form-select-btn" type="button" data-city-value="Пинск">Пинск</button>
+                <button class="modal__form-select-btn" type="button" data-city-value="Новополоцк">Новополоцк</button>
+
+              </div>
+
+
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <section id="availability">
+      <div class="availability">
+        <div class="availability__table">
+          <div class="availability__table-header items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-header">Адрес</div>
+              <div class="table-col-2_7 table-header">Режим работы</div>
+              <div class="table-col-2 table-header">Наличие</div>
+              <div class="table-col-1_3 table-header">Забрать</div>
+            </div>
+          </div>
+          <div class="availability__table-body items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-body__address">
+                ТРЦ “Галерея”, г. Минск, пр.Победителей, 9, 4-й этаж
+              </div>
+              <div class="table-col-2_7 table-body__working">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.41397" y1="4.45483" x2="4.45469" y2="7.49555" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                  <line x1="4.45471" y1="7.49558" x2="7.49543" y2="4.45486" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                10:00 – 22:00, без выходных
+                <div class="popup">
+                  <div class="popup__title">Время работы</div>
+                  <p>10:00 – 22:00, без выходных</p>
+                  <p>10:00 – 20:00, 31 декабря</p>
+                  <p>выходной - 1 января</p>
+                  <br>
+                  <div class="popup__title">Телефоны</div>
+                  <p>A1: +375 44 735-70-70</p>
+                  <p>мтс: +375 29 235-70-70</p>
+                </div>
+              </div>
+              <div class="table-col-2 table-body__availability table-body__availability--true">В наличии</div>
+              <div class="table-col-1_3 table-body">17.11.2022</div>
+              <div class="table-col-2 table-body__reserve flex items-center justify-between">
+                Забронировать
+                <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 20.4598L15.4077 20.3947L15.4079 20.3945C15.4078 20.3945 15.4078 20.3946 15.4077 20.3947L15.5 20.4598ZM15.5 20.4598L15.5923 20.3947L15.5921 20.3944C15.5921 20.3945 15.5922 20.3946 15.5923 20.3947L15.5 20.4598ZM15.5 20.2637L21.2552 12.095C24.5413 7.4309 21.2055 0.999998 15.5 0.999998C9.79454 0.999998 6.45868 7.43091 9.74476 12.095L15.5 20.2637Z"
+                        stroke="#FF6700" stroke-width="2" />
+                  <circle cx="15.5" cy="7.5" r="1.5" fill="#FF6700" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="availability__table-body items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-body__address">
+                ТРЦ “Галерея”, г. Минск, пр.Победителей, 9, 4-й этаж
+              </div>
+              <div class="table-col-2_7 table-body__working">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.41397" y1="4.45483" x2="4.45469" y2="7.49555" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                  <line x1="4.45471" y1="7.49558" x2="7.49543" y2="4.45486" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                10:00 – 22:00, без выходных
+                <!-- <div class="popup">
+                  <div class="popup__title">Время работы</div>
+                  <p>10:00 – 22:00, без выходных</p>
+                  <p>10:00 – 20:00, 31 декабря</p>
+                  <p>выходной - 1 января</p>
+                  <br>
+                  <div class="popup__title">Телефоны</div>
+                  <p>A1: +375 44 735-70-70</p>
+                  <p>мтс: +375 29 235-70-70</p>
+                </div> -->
+              </div>
+              <div class="table-col-2 table-body__availability table-body__availability--true">В наличии</div>
+              <div class="table-col-1_3 table-body">17.11.2022</div>
+              <div class="table-col-2 table-body__reserve flex items-center justify-between">
+                Забронировать
+                <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 20.4598L15.4077 20.3947L15.4079 20.3945C15.4078 20.3945 15.4078 20.3946 15.4077 20.3947L15.5 20.4598ZM15.5 20.4598L15.5923 20.3947L15.5921 20.3944C15.5921 20.3945 15.5922 20.3946 15.5923 20.3947L15.5 20.4598ZM15.5 20.2637L21.2552 12.095C24.5413 7.4309 21.2055 0.999998 15.5 0.999998C9.79454 0.999998 6.45868 7.43091 9.74476 12.095L15.5 20.2637Z"
+                        stroke="#FF6700" stroke-width="2" />
+                  <circle cx="15.5" cy="7.5" r="1.5" fill="#FF6700" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="availability__table-body items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-body__address">
+                ТРЦ “Галерея”, г. Минск, пр.Победителей, 9, 4-й этаж
+              </div>
+              <div class="table-col-2_7 table-body__working">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.41397" y1="4.45483" x2="4.45469" y2="7.49555" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                  <line x1="4.45471" y1="7.49558" x2="7.49543" y2="4.45486" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                10:00 – 22:00, без выходных
+                <!-- <div class="popup">
+                  <div class="popup__title">Время работы</div>
+                  <p>10:00 – 22:00, без выходных</p>
+                  <p>10:00 – 20:00, 31 декабря</p>
+                  <p>выходной - 1 января</p>
+                  <br>
+                  <div class="popup__title">Телефоны</div>
+                  <p>A1: +375 44 735-70-70</p>
+                  <p>мтс: +375 29 235-70-70</p>
+                </div> -->
+              </div>
+              <div class="table-col-2 table-body__availability table-body__availability--true">В наличии</div>
+              <div class="table-col-1_3 table-body">17.11.2022</div>
+              <div class="table-col-2 table-body__reserve flex items-center justify-between">
+                Забронировать
+                <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 20.4598L15.4077 20.3947L15.4079 20.3945C15.4078 20.3945 15.4078 20.3946 15.4077 20.3947L15.5 20.4598ZM15.5 20.4598L15.5923 20.3947L15.5921 20.3944C15.5921 20.3945 15.5922 20.3946 15.5923 20.3947L15.5 20.4598ZM15.5 20.2637L21.2552 12.095C24.5413 7.4309 21.2055 0.999998 15.5 0.999998C9.79454 0.999998 6.45868 7.43091 9.74476 12.095L15.5 20.2637Z"
+                        stroke="#FF6700" stroke-width="2" />
+                  <circle cx="15.5" cy="7.5" r="1.5" fill="#FF6700" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="availability__table-body items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-body__address">
+                ТРЦ “Галерея”, г. Минск, пр.Победителей, 9, 4-й этаж
+              </div>
+              <div class="table-col-2_7 table-body__working">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.41397" y1="4.45483" x2="4.45469" y2="7.49555" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                  <line x1="4.45471" y1="7.49558" x2="7.49543" y2="4.45486" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                10:00 – 22:00, без выходных
+                <!-- <div class="popup">
+                  <div class="popup__title">Время работы</div>
+                  <p>10:00 – 22:00, без выходных</p>
+                  <p>10:00 – 20:00, 31 декабря</p>
+                  <p>выходной - 1 января</p>
+                  <br>
+                  <div class="popup__title">Телефоны</div>
+                  <p>A1: +375 44 735-70-70</p>
+                  <p>мтс: +375 29 235-70-70</p>
+                </div> -->
+              </div>
+              <div class="table-col-2 table-body__availability table-body__availability--true">В наличии</div>
+              <div class="table-col-1_3 table-body">17.11.2022</div>
+              <div class="table-col-2 table-body__reserve flex items-center justify-between">
+                Забронировать
+                <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 20.4598L15.4077 20.3947L15.4079 20.3945C15.4078 20.3945 15.4078 20.3946 15.4077 20.3947L15.5 20.4598ZM15.5 20.4598L15.5923 20.3947L15.5921 20.3944C15.5921 20.3945 15.5922 20.3946 15.5923 20.3947L15.5 20.4598ZM15.5 20.2637L21.2552 12.095C24.5413 7.4309 21.2055 0.999998 15.5 0.999998C9.79454 0.999998 6.45868 7.43091 9.74476 12.095L15.5 20.2637Z"
+                        stroke="#FF6700" stroke-width="2" />
+                  <circle cx="15.5" cy="7.5" r="1.5" fill="#FF6700" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="availability__table-body items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-body__address">
+                ТРЦ “Галерея”, пр.Победителей, 9, 4-й этаж
+              </div>
+              <div class="table-col-2_7 table-body__working">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.41397" y1="4.45483" x2="4.45469" y2="7.49555" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                  <line x1="4.45471" y1="7.49558" x2="7.49543" y2="4.45486" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                10:00 – 22:00
+                <!-- <div class="popup">
+                  <div class="popup__title">Время работы</div>
+                  <p>10:00 – 22:00, без выходных</p>
+                  <p>10:00 – 20:00, 31 декабря</p>
+                  <p>выходной - 1 января</p>
+                  <br>
+                  <div class="popup__title">Телефоны</div>
+                  <p>A1: +375 44 735-70-70</p>
+                  <p>мтс: +375 29 235-70-70</p>
+                </div> -->
+              </div>
+              <div class="table-col-2 table-body__availability table-body__availability--true">В наличии</div>
+              <div class="table-col-1_3 table-body">17.11.2022</div>
+              <div class="table-col-2 table-body__reserve flex items-center justify-between">
+                Забронировать
+                <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 20.4598L15.4077 20.3947L15.4079 20.3945C15.4078 20.3945 15.4078 20.3946 15.4077 20.3947L15.5 20.4598ZM15.5 20.4598L15.5923 20.3947L15.5921 20.3944C15.5921 20.3945 15.5922 20.3946 15.5923 20.3947L15.5 20.4598ZM15.5 20.2637L21.2552 12.095C24.5413 7.4309 21.2055 0.999998 15.5 0.999998C9.79454 0.999998 6.45868 7.43091 9.74476 12.095L15.5 20.2637Z"
+                        stroke="#FF6700" stroke-width="2" />
+                  <circle cx="15.5" cy="7.5" r="1.5" fill="#FF6700" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="availability__table-body items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-body__address">
+                ТРЦ “Галерея”, г. Минск, пр.Победителей, 9, 4-й этаж
+              </div>
+              <div class="table-col-2_7 table-body__working">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.41397" y1="4.45483" x2="4.45469" y2="7.49555" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                  <line x1="4.45471" y1="7.49558" x2="7.49543" y2="4.45486" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                10:00 – 22:00, без выходных
+                <!-- <div class="popup">
+                  <div class="popup__title">Время работы</div>
+                  <p>10:00 – 22:00, без выходных</p>
+                  <p>10:00 – 20:00, 31 декабря</p>
+                  <p>выходной - 1 января</p>
+                  <br>
+                  <div class="popup__title">Телефоны</div>
+                  <p>A1: +375 44 735-70-70</p>
+                  <p>мтс: +375 29 235-70-70</p>
+                </div> -->
+              </div>
+              <div class="table-col-2 table-body__availability table-body__availability--true">В наличии</div>
+              <div class="table-col-1_3 table-body">17.11.2022</div>
+              <div class="table-col-2 table-body__reserve flex items-center justify-between">
+                Забронировать
+                <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 20.4598L15.4077 20.3947L15.4079 20.3945C15.4078 20.3945 15.4078 20.3946 15.4077 20.3947L15.5 20.4598ZM15.5 20.4598L15.5923 20.3947L15.5921 20.3944C15.5921 20.3945 15.5922 20.3946 15.5923 20.3947L15.5 20.4598ZM15.5 20.2637L21.2552 12.095C24.5413 7.4309 21.2055 0.999998 15.5 0.999998C9.79454 0.999998 6.45868 7.43091 9.74476 12.095L15.5 20.2637Z"
+                        stroke="#FF6700" stroke-width="2" />
+                  <circle cx="15.5" cy="7.5" r="1.5" fill="#FF6700" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="availability__table-body items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-body__address">
+                ТРЦ “Галерея”, г. Минск, пр.Победителей, 9, 4-й этаж
+              </div>
+              <div class="table-col-2_7 table-body__working">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.41397" y1="4.45483" x2="4.45469" y2="7.49555" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                  <line x1="4.45471" y1="7.49558" x2="7.49543" y2="4.45486" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                10:00 – 22:00, без выходных
+                <!-- <div class="popup">
+                  <div class="popup__title">Время работы</div>
+                  <p>10:00 – 22:00, без выходных</p>
+                  <p>10:00 – 20:00, 31 декабря</p>
+                  <p>выходной - 1 января</p>
+                  <br>
+                  <div class="popup__title">Телефоны</div>
+                  <p>A1: +375 44 735-70-70</p>
+                  <p>мтс: +375 29 235-70-70</p>
+                </div> -->
+              </div>
+              <div class="table-col-2 table-body__availability table-body__availability--true">В наличии</div>
+              <div class="table-col-1_3 table-body">17.11.2022</div>
+              <div class="table-col-2 table-body__reserve flex items-center justify-between">
+                Забронировать
+                <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 20.4598L15.4077 20.3947L15.4079 20.3945C15.4078 20.3945 15.4078 20.3946 15.4077 20.3947L15.5 20.4598ZM15.5 20.4598L15.5923 20.3947L15.5921 20.3944C15.5921 20.3945 15.5922 20.3946 15.5923 20.3947L15.5 20.4598ZM15.5 20.2637L21.2552 12.095C24.5413 7.4309 21.2055 0.999998 15.5 0.999998C9.79454 0.999998 6.45868 7.43091 9.74476 12.095L15.5 20.2637Z"
+                        stroke="#FF6700" stroke-width="2" />
+                  <circle cx="15.5" cy="7.5" r="1.5" fill="#FF6700" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="availability__table-body items-center">
+            <div class="table-row">
+              <div class="table-col-4 table-body__address">
+                ТРЦ “Галерея”, г. Минск, пр.Победителей, 9, 4-й этаж
+              </div>
+              <div class="table-col-2_7 table-body__working">
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="1.41397" y1="4.45483" x2="4.45469" y2="7.49555" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                  <line x1="4.45471" y1="7.49558" x2="7.49543" y2="4.45486" stroke="#D9D9D9" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                10:00 – 22:00, без выходных
+                <!-- <div class="popup">
+                  <div class="popup__title">Время работы</div>
+                  <p>10:00 – 22:00, без выходных</p>
+                  <p>10:00 – 20:00, 31 декабря</p>
+                  <p>выходной - 1 января</p>
+                  <br>
+                  <div class="popup__title">Телефоны</div>
+                  <p>A1: +375 44 735-70-70</p>
+                  <p>мтс: +375 29 235-70-70</p>
+                </div> -->
+              </div>
+              <div class="table-col-2 table-body__availability table-body__availability--true">В наличии</div>
+              <div class="table-col-1_3 table-body">17.11.2022</div>
+              <div class="table-col-2 table-body__reserve flex items-center justify-between">
+                Забронировать
+                <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 20.4598L15.4077 20.3947L15.4079 20.3945C15.4078 20.3945 15.4078 20.3946 15.4077 20.3947L15.5 20.4598ZM15.5 20.4598L15.5923 20.3947L15.5921 20.3944C15.5921 20.3945 15.5922 20.3946 15.5923 20.3947L15.5 20.4598ZM15.5 20.2637L21.2552 12.095C24.5413 7.4309 21.2055 0.999998 15.5 0.999998C9.79454 0.999998 6.45868 7.43091 9.74476 12.095L15.5 20.2637Z"
+                        stroke="#FF6700" stroke-width="2" />
+                  <circle cx="15.5" cy="7.5" r="1.5" fill="#FF6700" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="delivery">
+      <div class="delivery-content">
+        <div class="delivery-content__info flex">
+          <div class="delivery-content__item grey-block flex items-center justify-between">
+            <div class="title title--price">Стоимость доставки</div>
+            <div class="text">от 200 руб. доставка бесплатно</div>
+          </div>
+          <div class="delivery-content__item grey-block flex items-center justify-between">
+            <div class="title title--delivery">Дата доставки</div>
+            <div class="text">12.11.2022</div>
+          </div>
+        </div>
+        <div class="delivery-content__description">
+          <div class="title">Условия доставки товара:</div>
+          <p>Осуществляется непосредственно со склада Интернет-магазина при оформлении покупки (от 50 рублей) на сайте
+            или через контактный центр. Доступна по Минску и населенным пунктам в радиусе 60 км от Минска.
+          </p>
+          <p>
+            Доставка к месту выгрузки осуществляется при наличии подъездных путей с усовершенствованным дорожным
+            покрытием.
+          </p>
+          <p>
+            Подъем крупногабаритного и мелкогабаритного товара осуществляется бесплатно (стиральные и посудомоечные
+            машины, холодильники, газовые плиты). Сотрудники службы доставки не осуществляют перенос товара весом свыше
+            15 кг на расстояние превышающие 50 м, а товар весом до 15 кг на расстояние свыше 100 м, подъем товара по
+            лестничным проемам осуществляется на высоту не выше 9 этажа.
+          </p>
+          <p>
+            В случае несоблюдения перечисленных выше условий сотрудники доставки осуществляют доставку до дверного
+            проема
+            либо помещения с требуемыми свойствами. Товар распаковывается сотрудниками доставки, осматривается
+            Заказчиком,
+            который делает соответствующие отметки в документах.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+</div>
     </section>
     <section id="content-6">
       <div class="reviews">

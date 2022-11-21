@@ -383,53 +383,6 @@
   }
 }
 
-.tabs {
-  section {
-    display: none;
-    padding: 40px 0 45px 0;
-    border-top: 1px solid #ddd;
-  }
-
-  &__input {
-    display: none;
-  }
-
-  &__label {
-    display: inline-block;
-    margin: 0 36px -1px 0;
-    padding-bottom: 18px;
-
-    font-weight: 700;
-
-    border-bottom: 2px solid transparent;
-
-    transition: $base-transition;
-
-    span {
-      font-weight: 400;
-    }
-  }
-
-  &__label:hover {
-    color: $orange;
-    cursor: pointer;
-  }
-
-  input:checked + &__label {
-    color: $orange;
-    border-bottom: 2px solid $orange;
-  }
-
-  #tab-1:checked ~ #content-1,
-  #tab-2:checked ~ #content-2,
-  #tab-3:checked ~ #content-3,
-  #tab-4:checked ~ #content-4,
-  #tab-5:checked ~ #content-5,
-  #tab-6:checked ~ #content-6 {
-    display: block;
-  }
-}
-
 .specifications {
   &__item {
   }
