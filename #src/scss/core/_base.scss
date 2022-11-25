@@ -26,10 +26,19 @@ a {
 .container {
   width: 100%;
   @include container();
+
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .table-row {
   @include row-flex();
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .table-col-1_3 {
@@ -92,6 +101,10 @@ a {
     display: none;
     padding: 40px 0 45px 0;
     border-top: 1px solid #ddd;
+
+    @media (max-width: 768px) {
+      padding: 20px 0 22px 0;
+    }
   }
 
   &__input {
@@ -100,7 +113,7 @@ a {
 
   &__label {
     display: inline-block;
-    margin: 0 36px -1px 0;
+    margin: 0 36px 14px 0;
     padding-bottom: 18px;
 
     font-weight: 700;
@@ -112,6 +125,10 @@ a {
     span {
       font-weight: 400;
     }
+
+    @media (max-width: 1024px) {
+      margin-bottom: -1px;
+    }
   }
 
   &__label:hover {
@@ -119,7 +136,7 @@ a {
     cursor: pointer;
   }
 
-  input:checked + &__label {
+  &__label.active {
     color: $orange;
     border-bottom: 2px solid $orange;
   }

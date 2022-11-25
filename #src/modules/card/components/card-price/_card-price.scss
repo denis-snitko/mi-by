@@ -1,4 +1,14 @@
 &__price {
   max-width: 310px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+
+  &-action-time {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
 }

@@ -1,19 +1,26 @@
 &__slider {
   position: relative;
 
-  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
   width: 100%;
-  height: 490px;
   overflow: hidden;
   margin-right: 24px;
-  border: 1px solid #000;
+  padding-top: 28px;
+  padding-bottom: 28px;
 
   .card__slider--thumbs {
     float: left;
     width: calc(16% - 20px);
-    // height: 100%;
     margin-right: 20px;
-    
+
+    & .swiper-wrapper {
+      height: 428px;
+      margin: 16px 0;
+      padding-bottom: 28px;
+    }
+
     & .swiper-slide {
       display: flex;
       align-items: center;
@@ -21,34 +28,79 @@
       box-sizing: border-box;
       cursor: pointer;
     }
-    
-    & .swiper-wrapper {
-      margin: 16px 0;
-      
-    }
 
     img {
       width: 53px;
       height: 53px;
       object-fit: contain;
     }
+
+    .swiper-button-prev-th,
+    .swiper-button-next-th {
+      position: absolute;
+      cursor: pointer;
+      z-index: 2;
+      width: 100%;
+      height: 15px;
+
+      display: flex;
+      justify-content: center;
+
+      background-color: #fff;
+
+      &:hover svg {
+        line {
+          transition: $base-transition;
+          stroke: $orange;
+        }
+      }
+    }
+
+    .swiper-button-prev-th {
+      top: 0;
+    }
+
+    .swiper-button-next-th {
+      bottom: 0;
+
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
-  .card__slider--thumbs
-
   .card__slider--thumbs .swiper-slide-active {
-    border: 1px solid grey;
   }
 
   .card__slider--thumbs .swiper-slide:hover {
-    border: 1px solid grey;
   }
 
   .card__slider--main {
     float: right;
     max-width: 424px;
     width: 100%;
-    height: 490px;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+
+      @media (max-width: 768px) {
+        height: 100%;
+        width: auto;
+      }
+
+      @media (max-width: 414px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      float: none;
+    }
   }
 
   .card__slider--main .swiper-slide {
@@ -56,6 +108,10 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 1px solid grey;
+    padding-bottom: 24px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 }

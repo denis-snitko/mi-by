@@ -6,8 +6,10 @@
   @media (max-width: 1200px) {
     margin-top: 32px;
   }
-  @media (max-width: 600px) {
-    margin-top: 24px;
+
+  @media (max-width: 576px) {
+   margin-top: 0;
+    margin-bottom: 0;
   }
 
   &__pages {
