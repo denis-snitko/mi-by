@@ -58,12 +58,80 @@
     }
 
     &-header {
-      padding: 10px 24px;
-      border-bottom: 1px solid rgba($color: #424242, $alpha: .1);
+      border-bottom: 1px solid rgba($color: #424242, $alpha: 0.1);
+
+      .grey-block {
+        padding: 9px 19px;
+        background-color: #ffffff;
+      }
+
+      .payment-info__price {
+        margin-bottom: 0;
+
+        @media (max-width: 414px) {
+          .current {
+            font-size: rem(24px);
+          }
+
+          .old, .sale {
+            font-size: rem(14px);
+          }
+        }
+      }
+
+      .payment-info__add {
+        margin-bottom: 0;
+      }
+
+      .payment-info__add .add-to-card {
+        margin-right: 10px;
+        padding-left: 22px;
+        padding-right: 22px;
+
+        @media (max-width: 414px) {
+          padding-left: 12px;
+        padding-right: 12px;
+        }
+      }
+
+      .payment-info__add .buy-one-click {
+      }
     }
 
     &-footer {
       padding: 10px 24px;
+
+      .card__price-icons-item {
+        position: relative;
+        .text {
+          font-size: rem(11px);
+          line-height: 15px;
+
+          color: #aaaaaa;
+        }
+
+        & .badge {
+          position: absolute;
+          top: -6px;
+          right: 5px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 16px;
+          height: 16px;
+
+          padding: 0;
+
+          font-weight: 700;
+          font-size: rem(10px);
+
+          color: #ffffff;
+
+          background-color: $orange;
+          border-radius: 50%;
+        }
+      }
     }
   }
 
