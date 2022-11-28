@@ -11,7 +11,7 @@ const swiper = new Swiper('.card__promotion-swiper', {
 
 //
 
-var galleryThumbs = new Swiper('.card__slider--thumbs', {
+const galleryThumbs = new Swiper('.card__slider--thumbs', {
   direction: 'vertical',
   slidesPerView: 7,
   // slideToClickedSlide: false,
@@ -24,7 +24,7 @@ var galleryThumbs = new Swiper('.card__slider--thumbs', {
   },
 });
 
-var galleryMain = new Swiper('.card__slider--main', {
+const galleryMain = new Swiper('.card__slider--main', {
   slidesPerView: 1,
   loop: true,
   loopedSlides: 50,
@@ -55,11 +55,9 @@ const openModal = () => {
       EL_modal.style.display = 'none';
     });
 
-    EL_modal.addEventListener('click', (event) => {
-    });
+    EL_modal.addEventListener('click', (event) => {});
   }
 };
-
 
 const reviewsModal = () => {
   const EL_modal = document.querySelector('[data=js-modal-reviews]');
@@ -75,9 +73,6 @@ const reviewsModal = () => {
     EL_closeModalBtn.addEventListener('click', () => {
       document.body.style.overflow = 'auto';
       EL_modal.style.display = 'none';
-    });
-
-    EL_modal.addEventListener('click', (event) => {
     });
   }
 };
@@ -119,8 +114,36 @@ const badgesHandler = () => {
   }
 };
 
+const selectPaymentVariants = () => {
+  const EL_paymentVariants = document.querySelector('.js-payment-variants');
+  const EL_currentPaymentVariant = document.querySelector('.js-current-payment-variant');
+  const EL_selectItem = document.querySelectorAll('.js-select-item');
+
+  if (EL_paymentVariants && EL_currentPaymentVariant) {
+    EL_paymentVariants.addEventListener('click', () => {
+      EL_paymentVariants.classList.contains('open')
+        ? EL_paymentVariants.classList.remove('open')
+        : EL_paymentVariants.classList.add('open');
+    });
+  }
+
+  if (EL_selectItem) {
+    EL_selectItem.forEach((element) => {
+      element.addEventListener('click', () => {
+        document.querySelectorAll('.payment-variants__select-text').forEach((el) => el.classList.remove('selected'));
+        element.querySelector('.payment-variants__select-text').classList.add('selected');
+
+        const currentValue = element.querySelector('.payment-variants__select-text').textContent;
+
+        EL_currentPaymentVariant.textContent = currentValue;
+      });
+    });
+  }
+};
+
 reviewsModal();
 openModal();
 activeTab();
 popupTimeOpen();
 badgesHandler();
+selectPaymentVariants();
