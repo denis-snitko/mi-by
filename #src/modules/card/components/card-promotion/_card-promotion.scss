@@ -70,6 +70,10 @@
       height: 100%;
       padding: 24px 27px;
 
+      @media (max-width: 576px) {
+        padding: 24px;
+      }
+
       .base-button {
         padding: 16px;
       }

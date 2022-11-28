@@ -204,8 +204,27 @@
       <div class="reviews__form-footer flex justify-between">
         <div class="text">Перед отправкой отзыва убедитесь, что он не нарушает правил модерации: не содержит
           ссылок на сторонние ресурсы и оскорблений.</div>
-        <button class="base-button reviews__form-button">Отправить отзыв</button>
+        <button class="base-button reviews__form-button" data="js-open-reviews-modal">Отправить отзыв</button>
       </div>
     </form>
+  </div>
+
+  <div class="reviews__modal modal" data="js-modal-reviews">
+    <div class="modal__body">
+      <button class="modal__close" data="js-close-reviews-modal">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="8.63611" y1="21.364" x2="21.364" y2="8.63603" stroke="white" stroke-width="2"
+                stroke-linecap="round" />
+          <line x1="21.364" y1="21.364" x2="8.63606" y2="8.63605" stroke="white" stroke-width="2"
+                stroke-linecap="round" />
+        </svg>
+
+      </button>
+      <div class="modal__content">
+      <div class="title">Отзыв принят</div>
+      <div class="text">Ваш отзыв  будет опубликован после проверки нашим модератором</div>
+      </div>
+    </div>
+
   </div>
 </div>

@@ -199,4 +199,28 @@
       }
     }
   }
+
+  &__modal {
+    .modal__body {
+      height: auto;
+    }
+
+    .title {
+      text-align: center;
+
+      font-weight: 700;
+      font-size: rem(28px);
+      line-height: 50px;
+
+      color: #454545;
+    }
+
+    .text {
+      margin-bottom: 10px;
+      line-height: 22px;
+      text-align: center;
+
+      color: #424242;
+    }
+  }
 }

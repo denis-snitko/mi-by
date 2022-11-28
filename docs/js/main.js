@@ -56,11 +56,28 @@ const openModal = () => {
     });
 
     EL_modal.addEventListener('click', (event) => {
-      // event.preventDefault()
-      // if (!event.target.classList.contains('modal__body') ) {
-      //   document.body.style.overflow = 'auto';
-      //   EL_modal.style.display = 'none';
-      // }
+    });
+  }
+};
+
+
+const reviewsModal = () => {
+  const EL_modal = document.querySelector('[data=js-modal-reviews]');
+  const EL_openModal = document.querySelector('[data=js-open-reviews-modal]');
+  const EL_closeModalBtn = document.querySelector('[data=js-close-reviews-modal]');
+
+  if (EL_modal && EL_openModal && EL_closeModalBtn) {
+    EL_openModal.addEventListener('click', () => {
+      document.body.style.overflow = 'hidden';
+      EL_modal.style.display = 'flex';
+    });
+
+    EL_closeModalBtn.addEventListener('click', () => {
+      document.body.style.overflow = 'auto';
+      EL_modal.style.display = 'none';
+    });
+
+    EL_modal.addEventListener('click', (event) => {
     });
   }
 };
@@ -102,6 +119,7 @@ const badgesHandler = () => {
   }
 };
 
+reviewsModal();
 openModal();
 activeTab();
 popupTimeOpen();
