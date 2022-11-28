@@ -9,232 +9,39 @@
     <input class="tabs__input" id="tab-6" type="radio" name="card-info">
 
     <div class="label-wrapper flex">
-      <label class="tabs__label js-tabs-label" for="tab-1">Обзоры</label>
-      <label class="tabs__label js-tabs-label" for="tab-2">Видео-обзор продукта</label>
-      <label class="tabs__label js-tabs-label" for="tab-3">Характеристики</label>
-      <label class="tabs__label js-tabs-label" for="tab-4">Инструкции</label>
-      <label class="tabs__label js-tabs-label active" for="tab-5">Наличие и доставка</label>
-      <label class="tabs__label js-tabs-label" for="tab-6">Отзывы <span>(23)</span></label>
+      <label class="tabs__label js-tabs-label" for="tab-1">Характеристики</label>
+      <label class="tabs__label js-tabs-label" for="tab-2">Описание</label>
+      <label class="tabs__label js-tabs-label" for="tab-3">Видео</label>
+      <label class="tabs__label js-tabs-label active" for="tab-4">Наличие и доставка</label>
+      <label class="tabs__label js-tabs-label" for="tab-5">Отзывы <span>(23)</span></label>
+      <label class="tabs__label js-tabs-label" for="tab-6">Инструкции</label>
     </div>
 
     <section id="content-1">
-      <p>Обзоры</p>
+      @@include('../../../specifications/_specifications.html')
     </section>
+
     <section id="content-2">
-      <p>Видео-обзор продукта</p>
+      <p>Описание</p>
     </section>
+
     <section id="content-3">
-      <div class="specifications">
-        <div class="specifications__item">
-          <div class="specifications__header">Общая информация</div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Дата выхода на рынок</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">2022г.</div>
-          </div>
-        </div>
-        <div class="specifications__item">
-          <div class="specifications__header">Основные характеристики</div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Тип</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Тип</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Версия ОС на момент выхода</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Версия ОС на момент выхода</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Операционная система</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Операционная система</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Android без оболочки</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Android без оболочки</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Тип</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Тип</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Версия ОС на момент выхода</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Версия ОС на момент выхода</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Операционная система</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Операционная система</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Android без оболочки</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Android без оболочки</div>
-          </div>
-        </div>
-        <div class="specifications__item">
-          <div class="specifications__header">Основные характеристики</div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Тип</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Тип</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Версия ОС на момент выхода</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Версия ОС на момент выхода</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Операционная система</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Операционная система</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Android без оболочки</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Android без оболочки</div>
-          </div>
-        </div>
-        <div class="specifications__item">
-          <div class="specifications__header">Основные характеристики</div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Тип</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Тип</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Версия ОС на момент выхода</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Версия ОС на момент выхода</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Операционная система</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Операционная система</div>
-          </div>
-          <div class="specifications__row flex">
-            <div class="specifications__key flex items-center">
-              <span>Android без оболочки</span>
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9" cy="9" r="8" stroke="#D9D9D9" stroke-width="2"></circle>
-                <line x1="9.18188" y1="7.36365" x2="9.18188" y2="13.0909" stroke="#D9D9D9" stroke-width="2"></line>
-                <line x1="9.18176" y1="4.90912" x2="9.18176" y2="6.54548" stroke="#D9D9D9" stroke-width="2"></line>
-              </svg>
-            </div>
-            <div class="specifications__value">Android без оболочки</div>
-          </div>
-        </div>
-      </div>
+      <p>Видео</p>
     </section>
+
     <section id="content-4">
-      <p>Инструкции</p>
-    </section>
-    <section id="content-5">
       @@include('../../../delivery/_delivery.html')
     </section>
-    <section id="content-6">
+
+    <section id="content-5">
       @@include('../../../reviews/_reviews.html')
     </section>
+
+    <section id="content-6">
+      <p>Инструкции</p>
+    </section>
+
+
 
   </div>
 </section>

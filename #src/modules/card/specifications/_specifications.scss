@@ -1,0 +1,85 @@
+.specifications {
+  &__header {
+    padding: 14px 24px;
+    font-weight: 700;
+    font-size: rem(14px);
+
+    color: #454545;
+
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (max-width: 576px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &__row {
+    padding: 14px 24px;
+    font-size: rem(14px);
+    border-bottom: 1px solid #eaeaea;
+
+    transition: $base-transition;
+
+    @media (max-width: 576px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 20px;
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+
+    &:hover svg {
+      visibility: visible;
+    }
+  }
+
+  &__key {
+    max-width: 553px;
+    width: 100%;
+
+    font-weight: 400;
+
+    color: #808080;
+
+    @media (max-width: 768px) {
+      max-width: 50%;
+    }
+
+    @media (max-width: 576px) {
+      margin-right: 10px;
+    }
+
+    svg {
+      position: relative;
+      top: 1px;
+      visibility: hidden;
+      margin-left: 6px;
+
+      cursor: pointer;
+
+      transition: $base-transition;
+
+      &:hover {
+        circle,
+        line {
+          transition: $base-transition;
+          stroke: $link-hover-color;
+        }
+      }
+    }
+  }
+
+  &__value {
+    font-weight: 600;
+
+    color: #454545;
+  }
+}
