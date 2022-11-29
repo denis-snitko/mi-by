@@ -65,13 +65,13 @@ const videoMain = new Swiper('.video__slider--main-video', {
   on: {
     init() {
       const { activeIndex } = this;
-      const { title } = this.slides[activeIndex].dataset;
+      const { title } = this.slides[activeIndex]?.dataset || '';
       document.querySelector('.js-video__slider-title').textContent = title;
     },
 
     activeIndexChange() {
       const { activeIndex } = videoMain;
-      const { title } = videoMain.slides[activeIndex].dataset;
+      const { title } = videoMain.slides[activeIndex].dataset || '';
 
       document.querySelector('.js-video__slider-title').textContent = title;
     },

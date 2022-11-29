@@ -1698,68 +1698,6 @@ a:hover {
   width: auto !important;
 }
 
-.specifications__header {
-  padding: 14px 24px;
-  font-weight: 700;
-  font-size: 0.875rem;
-  color: #454545;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-.specifications__row {
-  padding: 14px 24px;
-  font-size: 0.875rem;
-  border-bottom: 1px solid #eaeaea;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.specifications__row:last-child {
-  margin-bottom: 20px;
-  border-bottom: none;
-}
-
-.specifications__row:hover {
-  background-color: #f5f5f5;
-}
-
-.specifications__row:hover svg {
-  visibility: visible;
-}
-
-.specifications__key {
-  max-width: 553px;
-  width: 100%;
-  font-weight: 400;
-  color: #808080;
-}
-
-.specifications__key svg {
-  position: relative;
-  top: 1px;
-  visibility: hidden;
-  margin-left: 6px;
-  cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.specifications__key svg:hover circle,
-.specifications__key svg:hover line {
-  -webkit-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  stroke: #FF6700;
-}
-
-.specifications__value {
-  font-weight: 600;
-  color: #454545;
-}
-
 .delivery__tabs {
   position: relative;
 }
@@ -2086,6 +2024,68 @@ a:hover {
 
 .modal__close:hover {
   background-color: #ff7517;
+}
+
+.specifications__header {
+  padding: 14px 24px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #454545;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.specifications__row {
+  padding: 14px 24px;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #eaeaea;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.specifications__row:last-child {
+  margin-bottom: 20px;
+  border-bottom: none;
+}
+
+.specifications__row:hover {
+  background-color: #f5f5f5;
+}
+
+.specifications__row:hover svg {
+  visibility: visible;
+}
+
+.specifications__key {
+  max-width: 553px;
+  width: 100%;
+  font-weight: 400;
+  color: #808080;
+}
+
+.specifications__key svg {
+  position: relative;
+  top: 1px;
+  visibility: hidden;
+  margin-left: 6px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.specifications__key svg:hover circle,
+.specifications__key svg:hover line {
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  stroke: #FF6700;
+}
+
+.specifications__value {
+  font-weight: 600;
+  color: #454545;
 }
 
 .video__slider {
@@ -2731,10 +2731,6 @@ a:hover {
     display: flex;
   }
 
-  .specifications__key {
-    max-width: 50%;
-  }
-
   .delivery__tabs section {
     padding-top: 21px;
     padding-bottom: 0;
@@ -2861,6 +2857,10 @@ a:hover {
     margin-right: 0;
   }
 
+  .specifications__key {
+    max-width: 50%;
+  }
+
   .video__slider {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2937,6 +2937,19 @@ a:hover {
     padding: 24px;
   }
 
+  .modal {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .modal__content {
+    padding: 20px;
+  }
+
   .specifications__header {
     padding-left: 16px;
     padding-right: 16px;
@@ -2949,19 +2962,6 @@ a:hover {
 
   .specifications__key {
     margin-right: 10px;
-  }
-
-  .modal {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-
-  .modal__content {
-    padding: 20px;
   }
 
   .reviews__item {
