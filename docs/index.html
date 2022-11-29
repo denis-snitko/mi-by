@@ -649,16 +649,16 @@
 
     <input class="tabs__input" id="tab-1" type="radio" name="card-info">
     <input class="tabs__input" id="tab-2" type="radio" name="card-info">
-    <input class="tabs__input" id="tab-3" type="radio" name="card-info">
+    <input class="tabs__input" id="tab-3" type="radio" name="card-info" checked>
     <input class="tabs__input" id="tab-4" type="radio" name="card-info">
-    <input class="tabs__input" id="tab-5" type="radio" name="card-info" checked>
+    <input class="tabs__input" id="tab-5" type="radio" name="card-info">
     <input class="tabs__input" id="tab-6" type="radio" name="card-info">
 
     <div class="label-wrapper flex">
       <label class="tabs__label js-tabs-label" for="tab-1">Характеристики</label>
       <label class="tabs__label js-tabs-label" for="tab-2">Описание</label>
-      <label class="tabs__label js-tabs-label" for="tab-3">Видео</label>
-      <label class="tabs__label js-tabs-label active" for="tab-4">Наличие и доставка</label>
+      <label class="tabs__label js-tabs-label active" for="tab-3">Видео</label>
+      <label class="tabs__label js-tabs-label" for="tab-4">Наличие и доставка</label>
       <label class="tabs__label js-tabs-label" for="tab-5">Отзывы <span>(23)</span></label>
       <label class="tabs__label js-tabs-label" for="tab-6">Инструкции</label>
     </div>
@@ -872,7 +872,116 @@
     </section>
 
     <section id="content-3">
-      <p>Видео</p>
+      <div class="video">
+  <div class="video__slider">
+    <div class="swiper-container video__slider--main-video">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-title="Обзор серии Xiaomi Redmi Note 11">
+          <iframe width="100%" height="482" src="https://www.youtube.com/embed/r5pv0kKoeac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide" data-title="Xiaomi анонсировала европейскую версию линейки Redmi Note 11">
+          <iframe width="100%" height="482" src="https://www.youtube.com/embed/aS-LUW5Jim0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="swiper-slide">
+          video slide
+        </div>
+        <div class="swiper-slide">
+          video slide
+        </div>
+        <div class="swiper-slide">
+          video slide
+        </div>
+        <div class="swiper-slide">
+          video slide
+        </div>
+        <div class="swiper-slide">
+          video slide
+        </div>
+        <div class="swiper-slide">
+          video slide
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-container video__slider--thumbs-video">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-slide__item">
+            <img src="./img/forVideoSlider/img-1.jpg" alt="#">
+            <span>Обзор серии Xiaomi Redmi Note 11</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__item">
+            <img src="./img/forVideoSlider/img-2.jpg" alt="#">
+            <span>Xiaomi анонсировала европейскую версию линейки Redmi Note 11</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__item">
+            <img src="./img/forVideoSlider/img-3.jpg" alt="#">
+            <span>Обзор серии Xiaomi Redmi Note 11: лучшая линейка в истории?</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__item">
+            <img src="./img/forVideoSlider/img-4.jpg" alt="#">
+            <span>Xiaomi анонсировала европейскую версию линейки Redmi Note 11</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__item">
+            <img src="./img/forVideoSlider/img-1.jpg" alt="#">
+            <span>Обзор серии Xiaomi Redmi Note 11</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__item">
+            <img src="./img/forVideoSlider/img-2.jpg" alt="#">
+            <span>Xiaomi анонсировала европейскую версию линейки Redmi Note 11</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__item">
+            <img src="./img/forVideoSlider/img-3.jpg" alt="#">
+            <span>Обзор серии Xiaomi Redmi Note 11: лучшая линейка в истории?</span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-slide__item">
+            <img src="./img/forVideoSlider/img-4.jpg" alt="#">
+            <span>Xiaomi анонсировала европейскую версию линейки Redmi Note 11</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="video__slider-description flex items-center justify-between">
+    <div class="video__slider-title js-video__slider-title">
+      
+    </div>
+    <div class="swiper-button-wrapper">
+      <div class="swiper-button-prev-video">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="5.05029" y1="1.51456" x2="1.51476" y2="5.05009" stroke="#ACACAC" stroke-width="2"
+                stroke-linecap="round" />
+          <line x1="1.51431" y1="5.05017" x2="5.04985" y2="8.5857" stroke="#ACACAC" stroke-width="2"
+                stroke-linecap="round" />
+        </svg>
+      </div>
+      <div class="swiper-button-next-video">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="5.05029" y1="1.51456" x2="1.51476" y2="5.05009" stroke="#ACACAC" stroke-width="2"
+                stroke-linecap="round" />
+          <line x1="1.51431" y1="5.05017" x2="5.04985" y2="8.5857" stroke="#ACACAC" stroke-width="2"
+                stroke-linecap="round" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
     </section>
 
     <section id="content-4">

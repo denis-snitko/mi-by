@@ -14,9 +14,7 @@ const swiper = new Swiper('.card__promotion-swiper', {
 const galleryThumbs = new Swiper('.card__slider--thumbs', {
   direction: 'vertical',
   slidesPerView: 7,
-  // slideToClickedSlide: false,
   spaceBetween: 10,
-  // loopedSlides: 50,
   loop: false,
   navigation: {
     nextEl: '.swiper-button-next-th',
@@ -28,12 +26,55 @@ const galleryMain = new Swiper('.card__slider--main', {
   slidesPerView: 1,
   loop: true,
   loopedSlides: 50,
-  navigation: {
-    // nextEl: '.swiper-button-next',
-    // prevEl: '.swiper-button-prev',
-  },
   thumbs: {
     swiper: galleryThumbs,
+  },
+});
+
+//
+
+const videoThumbs = new Swiper('.video__slider--thumbs-video', {
+  slidesPerView: 2,
+  spaceBetween: 17,
+  loop: false,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    769: {
+      slidesPerView: 4,
+      direction: 'vertical',
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next-video',
+    prevEl: '.swiper-button-prev-video',
+  },
+});
+
+const videoMain = new Swiper('.video__slider--main-video', {
+  init: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-button-next-video',
+    prevEl: '.swiper-button-prev-video',
+  },
+  thumbs: {
+    swiper: videoThumbs,
+  },
+  on: {
+    init() {
+      const { activeIndex } = this;
+      const { title } = this.slides[activeIndex].dataset;
+      document.querySelector('.js-video__slider-title').textContent = title;
+    },
+
+    activeIndexChange() {
+      const { activeIndex } = videoMain;
+      const { title } = videoMain.slides[activeIndex].dataset;
+
+      document.querySelector('.js-video__slider-title').textContent = title;
+    },
   },
 });
 
@@ -141,9 +182,11 @@ const selectPaymentVariants = () => {
   }
 };
 
-reviewsModal();
-openModal();
-activeTab();
-popupTimeOpen();
-badgesHandler();
-selectPaymentVariants();
+addEventListener('DOMContentLoaded', () => {
+  reviewsModal();
+  openModal();
+  activeTab();
+  popupTimeOpen();
+  badgesHandler();
+  selectPaymentVariants();
+});

@@ -2088,6 +2088,136 @@ a:hover {
   background-color: #ff7517;
 }
 
+.video__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 482px;
+}
+
+.video__slider--main-video {
+  max-width: 100%;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.video__slider--thumbs-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 412px;
+  width: 100%;
+}
+
+.video__slider--thumbs-video .swiper-slide {
+  cursor: pointer;
+}
+
+.video__slider--thumbs-video .swiper-slide__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video__slider--thumbs-video .swiper-slide__item img {
+  max-width: 192px;
+  width: 100%;
+  max-height: 108px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+.video__slider--thumbs-video .swiper-slide__item span {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #454545;
+}
+
+.video__slider--thumbs-video .swiper-slide-thumb-active .swiper-slide__item span {
+  color: #FF6700;
+}
+
+.video__slider-description {
+  margin-top: 8px;
+}
+
+.video__slider-title {
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 40px;
+  color: #454545;
+}
+
+.video .swiper-button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.video .swiper-button-prev-video,
+.video .swiper-button-next-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.video .swiper-button-prev-video:hover,
+.video .swiper-button-next-video:hover {
+  background-color: #FF6700;
+}
+
+.video .swiper-button-prev-video:hover svg line,
+.video .swiper-button-next-video:hover svg line {
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  stroke: #ffffff;
+}
+
+.video .swiper-button-prev-video {
+  margin-right: 13px;
+}
+
+.video .swiper-button-next-video {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.video .swiper-button-disabled {
+  opacity: 0.6;
+}
+
+.video .swiper-button-disabled:hover {
+  background-color: #f5f5f5;
+}
+
+.video .swiper-button-disabled:hover svg line {
+  stroke: #acacac;
+}
+
 .reviews__no-data {
   margin-bottom: 55px;
 }
@@ -2730,6 +2860,47 @@ a:hover {
   .delivery .delivery-content__item:not(last-child) {
     margin-right: 0;
   }
+
+  .video__slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 100%;
+  }
+
+  .video__slider--main-video {
+    height: 482px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .video__slider--thumbs-video {
+    max-width: 100%;
+  }
+
+  .video__slider--thumbs-video .swiper-slide__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 16px;
+  }
+
+  .video__slider--thumbs-video .swiper-slide__item img {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .video__slider--thumbs-video .swiper-slide__item span {
+    font-size: 0.75rem;
+    line-height: 18px;
+  }
+
+  .video__slider-title {
+    font-size: 1.125rem;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2913,6 +3084,11 @@ a:hover {
 
   .delivery .delivery-content__item .title--delivery {
     margin-bottom: 10px;
+  }
+
+  .video__slider-title {
+    font-size: 1rem;
+    line-height: 21px;
   }
 }
 
