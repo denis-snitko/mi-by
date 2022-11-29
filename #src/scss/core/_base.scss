@@ -56,7 +56,7 @@ a {
   @include size(2.7);
 }
 
-.table-col-4 {
+.table-col-4, .col-4 {
   @include col();
   @include size(4);
 }
