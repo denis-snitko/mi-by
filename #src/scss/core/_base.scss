@@ -33,6 +33,10 @@ a {
   }
 }
 
+.row-flex {
+  @include row-flex();
+}
+
 .table-row {
   @include row-flex();
 
@@ -59,6 +63,11 @@ a {
 .table-col-4, .col-4 {
   @include col();
   @include size(4);
+}
+
+.col-6 {
+  @include col();
+  @include size(6);
 }
 
 .container-full {
@@ -150,6 +159,15 @@ a {
   #delivery:checked ~ #delivery,
   #availability:checked ~ #availability {
     display: block;
+  }
+}
+
+.divider {
+  border-bottom: 1px solid #D9D9D9;
+
+  &--margin-bottom {
+    margin-top: 0 !important;
+    margin-bottom: 75px;
   }
 }
 

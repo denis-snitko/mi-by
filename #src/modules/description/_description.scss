@@ -1,3 +1,278 @@
 .description {
+  img {
+    display: block;
+    width: 100%;
+  }
+  &__row {
+    display: flex;
+    margin-bottom: 75px;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+
+      .col-6 {
+        @include size-md(12);
+      }
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 34px;
+    }
+
+    .col {
+      width: 50%;
+      padding: 40px 46px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      &--darken {
+        background-color: #454545;
+      }
+
+      &--grey {
+        background-color: #f5f5f5;
+      }
+
+      &--withoutPadding {
+        padding: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: rem(32px);
+    line-height: 40px;
+
+    &--white {
+      color: #ffffff;
+    }
+  }
+
+  &__text {
+    margin-bottom: 45px;
+    line-height: 24px;
+
+    &--white {
+      color: #ffffff;
+    }
+
+    &--width {
+      width: 550px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__hero {
+    margin-bottom: 75px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 34px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 474px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: 24px;
+  }
+
+  &__list {
+    margin-bottom: 62px;
+    line-height: 24px;
+
+    li {
+      position: relative;
+      margin-bottom: 13px;
+      padding-left: 22px;
+
+      &:before {
+        content: url('../img/icons/checked.svg');
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+    }
+  }
+
+  &__footnote {
+    margin-bottom: 75px;
+    padding: 35px 45px;
+    font-weight: 600;
+    line-height: 24px;
+
+    color: #424242;
+    background-color: #f5f5f5;
+    border-left: 3px solid $orange;
+
+    @media (max-width: 576px) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__advantages {
+    margin-bottom: 100px;
+
+    line-height: 24px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 50px;
+
+      .col-4 {
+        @include size-sm(12);
+      }
+    }
+
+    li {
+      position: relative;
+      padding-top: 30px;
+      border-top: 1px solid #d9d9d9;
+
+      @media (max-width: 576px) {
+        margin-top: 20px;
+        padding-left: 54px;
+        padding-top: 0;
+        padding-bottom: 30px;
+        border-top: none;
+        border-bottom: 1px solid #d9d9d9;
+      }
+
+      .count {
+        position: absolute;
+        top: -18px;
+        left: 0;
+        padding-right: 12px;
+        background-color: #ffffff;
+
+        @media (max-width: 576px) {
+          top: 0;
+        }
+
+        .text {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 35px;
+          height: 35px;
+          font-weight: 800;
+          font-size: rem(12px);
+          background-color: $orange;
+
+          color: #ffffff;
+
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &__features {
+    margin-bottom: 35px;
+
+    &-item {
+      margin-bottom: 40px;
+      padding: 0 20px;
+      border-left: 2px solid $orange;
+    }
+
+    &-title {
+      margin-bottom: 12px;
+      font-weight: 600;
+      font-size: rem(22px);
+      line-height: 28px;
+    }
+
+    &-text {
+      line-height: 24px;
+    }
+
+    &__col {
+      @include col();
+      @include size(6);
+    }
+  }
+
+  &__specifications {
+    margin-bottom: 75px;
+
+    @media (max-width: 768px) {
+      overflow-x: auto;
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 34px;
+    }
+
+    .table {
+      width: 100%;
+
+      thead {
+        border-bottom: 2px solid $orange;
+
+        tr th {
+          padding: 15px 26px;
+          font-weight: 700;
+          font-size: rem(14px);
+          line-height: 20px;
+
+          color: #454545;
+
+          background-color: #f5f5f5;
+        }
+      }
+
+      tbody {
+        font-size: rem(14px);
+        line-height: 19px;
+        color: #454545;
+        tr th,
+        tr td {
+          padding: 15px 26px;
+          border-bottom: 1px solid #d9d9d9;
+        }
+
+        tr th {
+          font-weight: 600;
+        }
+
+        tr td {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &__video {
+    max-width: 860px;
+    width: 100%;
+
+    &-title {
+      margin-top: 15px;
+      font-weight: 600;
+      font-size: rem(22px);
+      line-height: 40px;
+
+      color: #454545;
+    }
+  }
+
+  .divider {
+    margin-top: -45px;
+    margin-bottom: 75px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 34px;
+    }
+  }
 }
