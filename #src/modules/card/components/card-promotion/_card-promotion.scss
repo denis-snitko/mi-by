@@ -218,11 +218,15 @@
       color: #454545;
     }
 
+    .swiper-pagination-fraction {
+      width: 60px;
+    }
+
     @media (max-width: 768px) {
       .swiper-pagination-fraction,
       .swiper-pagination-custom,
       .swiper-container-horizontal > .swiper-pagination-bullets {
-        width: 66px;
+        width: 60px;
       }
     }
   }

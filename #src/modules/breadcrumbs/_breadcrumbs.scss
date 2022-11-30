@@ -22,6 +22,10 @@
       padding-bottom: 8px;
     }
 
+    @media (max-width: 768px) {
+      font-size: rem(13px);
+    }
+
     &:after {
       content: url(../img/icons/arrow-right.svg);
       position: absolute;

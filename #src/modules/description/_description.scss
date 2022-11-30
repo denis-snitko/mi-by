@@ -3,6 +3,7 @@
     display: block;
     width: 100%;
   }
+
   &__row {
     display: flex;
     margin-bottom: 75px;
@@ -29,10 +30,17 @@
 
       &--darken {
         background-color: #454545;
+
+        @media (max-width: 768px) {
+          padding: 35px 25px 0 25px;
+        }
       }
 
       &--grey {
         background-color: #f5f5f5;
+        @media (max-width: 768px) {
+          padding: 35px 25px 0 25px;
+        }
       }
 
       &--withoutPadding {
@@ -45,6 +53,11 @@
     margin-bottom: 15px;
     font-size: rem(32px);
     line-height: 40px;
+
+    @media (max-width: 768px) {
+      font-size: rem(28px);
+      line-height: 35px;
+    }
 
     &--white {
       color: #ffffff;
@@ -116,6 +129,10 @@
     background-color: #f5f5f5;
     border-left: 3px solid $orange;
 
+    @media (max-width: 768px) {
+     padding: 25px;
+    }
+
     @media (max-width: 576px) {
       margin-bottom: 34px;
     }
@@ -140,12 +157,9 @@
       border-top: 1px solid #d9d9d9;
 
       @media (max-width: 576px) {
-        margin-top: 20px;
-        padding-left: 54px;
-        padding-top: 0;
-        padding-bottom: 30px;
-        border-top: none;
-        border-bottom: 1px solid #d9d9d9;
+        margin-top: 14px;
+        padding-left: 1px;
+        padding-bottom: 14px;
       }
 
       .count {
@@ -156,7 +170,7 @@
         background-color: #ffffff;
 
         @media (max-width: 576px) {
-          top: 0;
+          // top: 0;
         }
 
         .text {
@@ -200,6 +214,11 @@
     &__col {
       @include col();
       @include size(6);
+      @include size-sm(12);
+    }
+
+    .col-6 {
+      @include size-sm(12);
     }
   }
 
@@ -257,11 +276,20 @@
     max-width: 860px;
     width: 100%;
 
+    iframe {
+      height: 483px;
+
+      @media (max-width: 576px) {
+        height: 320px;
+      }
+
+      @media (max-width: 414px) {
+        height: 180px;
+      }
+    }
+
     &-title {
       margin-top: 15px;
-      font-weight: 600;
-      font-size: rem(22px);
-      line-height: 40px;
 
       color: #454545;
     }
@@ -273,6 +301,14 @@
 
     @media (max-width: 576px) {
       margin-bottom: 34px;
+    }
+  }
+
+  
+
+  &--margin {
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
     }
   }
 }

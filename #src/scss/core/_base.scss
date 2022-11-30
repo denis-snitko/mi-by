@@ -21,6 +21,10 @@ a {
 
 .main-content {
   flex: 1 1 auto;
+
+  @media (max-width: 768px) {
+    margin-bottom: 150px;
+  }
 }
 
 .container {
@@ -122,7 +126,7 @@ a {
 
   &__label {
     display: inline-block;
-    margin: 0 36px 14px 0;
+    margin: 0 36px -2px 0;
     padding-bottom: 18px;
 
     font-weight: 700;
@@ -137,6 +141,16 @@ a {
 
     @media (max-width: 1024px) {
       margin-bottom: -1px;
+    }
+
+    @media (max-width: 768px) {
+      &:first-child {
+        margin-left: 20px;
+      }
+
+      &:last-child {
+        margin-right: 20px;
+      }
     }
   }
 

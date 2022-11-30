@@ -46,10 +46,6 @@ const videoThumbs = new Swiper('.video__slider--thumbs-video', {
       direction: 'vertical',
     },
   },
-  navigation: {
-    nextEl: '.swiper-button-next-video',
-    prevEl: '.swiper-button-prev-video',
-  },
 });
 
 const videoMain = new Swiper('.video__slider--main-video', {
@@ -62,16 +58,34 @@ const videoMain = new Swiper('.video__slider--main-video', {
   thumbs: {
     swiper: videoThumbs,
   },
+  pagination: {
+    el: '.swiper-pagination--video',
+    type: 'fraction',
+  },
   on: {
     init() {
+      const sliderHeight = document.querySelector('.video__slider').clientWidth;
       const { activeIndex } = this;
+      const { slides } = this;
       const { title } = this.slides[activeIndex]?.dataset || '';
+
       document.querySelector('.js-video__slider-title').textContent = title;
+
+      if (slides.length === 1) {
+        document.querySelector('.video__slider--thumbs-video').remove();
+        document.querySelector('.video__slider-description > .divider').remove();
+        document.querySelector('.video__slider-description > .swiper-button-wrapper').remove();
+      }
+
+      if (slides.length <= 4 && sliderHeight > 728) {
+        document.querySelector('.video__slider-description > .divider').remove();
+        document.querySelector('.video__slider-description > .swiper-button-wrapper').remove();
+      }
     },
 
     activeIndexChange() {
       const { activeIndex } = videoMain;
-      const { title } = videoMain.slides[activeIndex].dataset || '';
+      const { title } = videoMain.slides[activeIndex]?.dataset || '';
 
       document.querySelector('.js-video__slider-title').textContent = title;
     },

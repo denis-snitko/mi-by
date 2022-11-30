@@ -23,19 +23,14 @@
     border: 1px solid #e6e6e6;
     border-radius: 2px;
 
-    @media (max-width: 414px) {
-      padding: 20px;
+    @media (max-width: 576px) {
+      padding: 35px;
     }
 
     img {
       width: 88px;
       height: 113px;
       margin-bottom: 20px;
-
-      @media (max-width: 414px) {
-        width: 72px;
-      height: auto;
-      }
     }
 
     &-title {
@@ -45,8 +40,8 @@
       font-size: rem(22px);
       line-height: 30px;
 
-      @media (max-width: 414px) {
-        font-size: rem(18px);
+      @media (max-width: 576px) {
+        font-size: rem(20px);
         line-height: 24px;
       }
 

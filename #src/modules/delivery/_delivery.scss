@@ -116,9 +116,6 @@
         @media (max-width: 768px) {
           display: none;
         }
-
-        .table-header-col {
-        }
       }
 
       &-body {
@@ -274,11 +271,43 @@
           &__reserve {
             color: $orange;
 
+            svg {
+              cursor: pointer;
+
+              &:hover {
+                path {
+                  fill: $orange;
+                }
+
+                circle {
+                  fill: #ffffff;
+                }
+              }
+            }
+
+            a {
+              border-bottom: 1px solid transparent;
+              transition: $base-transition;
+
+              &:hover {
+                border-bottom: 1px solid #ebe9e9;
+              }
+            }
+
             &--mobile {
               display: none;
               font-size: rem(14px);
 
               color: $orange;
+
+              a {
+                border-bottom: 1px solid transparent;
+                transition: $base-transition;
+
+                &:hover {
+                  border-bottom: 1px solid #ebe9e9;
+                }
+              }
             }
 
             @media (max-width: 768px) {

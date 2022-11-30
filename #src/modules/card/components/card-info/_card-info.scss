@@ -5,22 +5,31 @@
     white-space: nowrap;
     overflow: hidden;
     overflow-x: auto;
-    margin-bottom: -16px;
     padding-bottom: 1px;
+    margin-bottom: -1px;
+
+    @media (max-width: 768px) {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
 
     &::-webkit-scrollbar {
+      display: none;
       width: 0;
     }
 
     &::-webkit-scrollbar-thumb {
+      display: none;
       width: 0;
     }
 
     &::-webkit-scrollbar-track {
+      display: none;
       width: 0;
     }
     
     &::-webkit-scrollbar-button {
+      display: none;
       width: 0;
       height: 0;
     }
