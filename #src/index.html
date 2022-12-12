@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="./style/vendors.css" />
   <link rel="stylesheet" href="./style/main.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
   <title>MI.BY | Карточка товара</title>
 </head>
 
@@ -23,6 +25,27 @@
     </main>
     @@include('modules/footer/_footer.html')
   </div>
+
+  <div class="modal__map modal" data="js-modal-map">
+    <div class="modal__body">
+      <button class="modal__close" data="js-close-map-modal">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="8.63611" y1="21.364" x2="21.364" y2="8.63603" stroke="white" stroke-width="2"
+                stroke-linecap="round" />
+          <line x1="21.364" y1="21.364" x2="8.63606" y2="8.63605" stroke="white" stroke-width="2"
+                stroke-linecap="round" />
+        </svg>
+
+      </button>
+      <div class="modal__content">
+        <div id="map"></div>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  </div>
+
   <script src="./js/vendors.js"></script>
   <script src="./js/main.js"></script>
 </body>

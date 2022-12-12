@@ -264,6 +264,20 @@ a {
       padding-bottom: 24px;
     }
   }
+
+  &__map {
+    padding: 14px;
+    
+    .modal__body {
+      max-width: 773px;
+      width: 100%;
+      height: 501px;
+    }
+
+    .modal__content {
+      height: 100%;
+    }
+  }
 }
 
 .custom-checkbox {
@@ -821,4 +835,10 @@ a {
 
 .justify-between {
   justify-content: space-between;
+}
+
+
+#map {
+  height: 100% !important;
+  min-height: 100% !important;
 }

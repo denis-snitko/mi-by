@@ -109,8 +109,32 @@ const openModal = () => {
       document.body.style.overflow = 'auto';
       EL_modal.style.display = 'none';
     });
+  }
+};
+const mapModal = () => {
+  const EL_modal = document.querySelector('[data=js-modal-map]');
+  const EL_openModal = document.querySelector('[data=js-open-map-modal]');
+  const EL_closeModalBtn = document.querySelector('[data=js-close-map-modal]');
 
-    EL_modal.addEventListener('click', (event) => {});
+  if (EL_modal && EL_openModal && EL_closeModalBtn) {
+    let myMap;
+    EL_openModal.addEventListener('click', (event) => {
+      event.preventDefault();
+      document.body.style.overflow = 'hidden';
+      EL_modal.style.display = 'flex';
+
+      ymaps.ready(init);
+
+      // Дождёмся загрузки API и готовности DOM.
+
+      
+    });
+
+    EL_closeModalBtn.addEventListener('click', () => {
+      document.body.style.overflow = 'auto';
+      EL_modal.style.display = 'none';
+      myMap.destroy();
+    });
   }
 };
 
@@ -196,11 +220,53 @@ const selectPaymentVariants = () => {
   }
 };
 
+const movingCardPromotion = () => {
+  const cardPromotion = document.querySelector('.js-card-promotion');
+  const destinationFrom = document.querySelector('.js-card-info');
+  const destinationTo = document.querySelector('.js-also-purchased');
+
+  if (window.innerWidth < 769) {
+    destinationTo.insertAdjacentHTML('beforebegin', cardPromotion.innerHTML);
+    cardPromotion.remove();
+  }
+
+  if (window.innerWidth > 769) {
+    destinationFrom.insertAdjacentHTML('beforebegin', cardPromotion.innerHTML);
+    cardPromotion.remove();
+  }
+};
+
+function init() {
+  myMap = new ymaps.Map(
+    'map',
+    {
+      center: [53.90, 27.56], 
+      zoom: 11,
+    },
+  );
+  myMap.geoObjects.add(
+    new ymaps.Circle([
+      // Координаты центра круга.
+      [53.90, 27.56],
+     1
+  ], {}, {
+      // Цвет заливки.
+      fillColor: "#ffffff",
+      // Цвет обводки.
+      strokeColor: "#FF6700",
+      // Ширина обводки в пикселях.
+      strokeWidth: 17
+  })
+  );
+}
+
 addEventListener('DOMContentLoaded', () => {
   reviewsModal();
   openModal();
+  mapModal();
   activeTab();
   popupTimeOpen();
   badgesHandler();
   selectPaymentVariants();
+  movingCardPromotion();
 });
