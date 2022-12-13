@@ -1,0 +1,49 @@
+.recently {
+  position: relative;
+  .card-item {
+    border: 1px solid #EBEBEB;
+
+  }
+}
+
+.recently-swiper {
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-button-prev-recently,
+.swiper-button-next-recently {
+  position: absolute;
+  z-index: 3;
+  top: calc(50% - 21px);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  flex-shrink: 0;
+
+  cursor: pointer;
+  transition: $base-transition;
+
+  &:hover {
+    background-color: $orange;
+
+    svg line {
+      transition: $base-transition;
+      stroke: #ffffff;
+    }
+  }
+}
+
+.swiper-button-prev-recently {
+  left: -21px;
+}
+
+.swiper-button-next-recently {
+  transform: rotate(180deg);
+  right: -21px;
+}

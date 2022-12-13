@@ -69,6 +69,11 @@ a {
   @include size(4);
 }
 
+.col-3 {
+  @include col();
+  @include size(3);
+}
+
 .col-6 {
   @include col();
   @include size(6);
@@ -171,7 +176,12 @@ a {
   #tab-5:checked ~ #content-5,
   #tab-6:checked ~ #content-6,
   #delivery:checked ~ #delivery,
-  #availability:checked ~ #availability {
+  #availability:checked ~ #availability,
+  #all:checked ~ #all,
+  #smartphones:checked ~ #smartphones,
+  #accessories:checked ~ #accessories,
+  #compare-smartphones:checked ~ #compare-smartphones,
+  #compare-accessories:checked ~ #compare-accessories {
     display: block;
   }
 }
