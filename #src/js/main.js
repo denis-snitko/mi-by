@@ -266,6 +266,44 @@ const movingCardPromotion = () => {
 //	);
 //}
 
+const customSelectHandler = () => {
+  const EL_sort = document.querySelector('.js-custom-select');
+  const EL_currentSort = document.querySelector('.js-custom-select-variant');
+  const EL_selectItem = document.querySelectorAll('.js-select-item');
+  const EL_selectInput = document.querySelector('.js-custom-select-input');
+  const EL_searchInput = document.querySelector('.js-search input');
+
+  if (EL_sort && EL_currentSort) {
+    EL_sort.addEventListener('click', () => {
+      EL_sort.classList.contains('open')
+        ? EL_sort.classList.remove('open')
+        : EL_sort.classList.add('open');
+
+      EL_searchInput.focus();
+    });
+  }
+
+  if (EL_selectItem) {
+    EL_selectItem.forEach((element) => {
+      element.addEventListener('click', () => {
+        document.querySelectorAll('.custom-select__select-text').forEach((el) => el.classList.remove('selected'));
+        element.querySelector('.custom-select__select-text').classList.add('selected');
+
+        const currentValue = element.querySelector('.custom-select__select-text').textContent.trim();
+
+        EL_selectInput.value = currentValue;
+        EL_currentSort.textContent = currentValue;
+
+        if (currentValue === 'Другое') {
+          document.querySelector('.js-step-2-textarea').style.display = 'block';
+        } else {
+          document.querySelector('.js-step-2-textarea').style.display = 'none';
+        }
+      });
+    });
+  }
+};
+
 const mapModal = () => {
 	const EL_modal = document.querySelector('[data=js-modal-map]');
 	const EL_openModal = document.querySelector('[data=js-open-map-modal]');
@@ -301,5 +339,6 @@ addEventListener('DOMContentLoaded', () => {
 	badgesHandler();
 	selectPaymentVariants();
 	movingCardPromotion();
+	customSelectHandler();
 	mapModal();
 });

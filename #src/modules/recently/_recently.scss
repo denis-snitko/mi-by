@@ -1,8 +1,8 @@
 .recently {
   position: relative;
-  .card-item {
-    border: 1px solid #EBEBEB;
 
+  .card-item {
+    border: 1px solid #ebebeb;
   }
 }
 
@@ -16,7 +16,7 @@
   position: absolute;
   z-index: 3;
   top: calc(50% - 21px);
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
