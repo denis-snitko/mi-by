@@ -1,6 +1,19 @@
 &__promotion {
   margin-top: 45px;
 
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  &--mobile {
+    display: none;
+    
+    @media (max-width: 768px) {
+      display: block;
+      margin-bottom: 40px;
+    }
+  }
+
   &-body {
     height: 215px;
     border: 1px solid #e6e6e6;

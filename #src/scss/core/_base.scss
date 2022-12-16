@@ -80,6 +80,11 @@ a {
   @include size(6);
 }
 
+.col-9 {
+  @include col();
+  @include size(9);
+}
+
 .container-full {
   padding: 0;
   @include container-full();
@@ -768,6 +773,11 @@ a {
   }
 
   &__name {
+    margin-right: 4px;
+    max-width: 45%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
     color: #808080;
   }
 
