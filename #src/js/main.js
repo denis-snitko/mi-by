@@ -288,15 +288,27 @@ const mapModal = () => {
       event.preventDefault();
       document.body.style.overflow = 'hidden';
       EL_modal.style.display = 'flex';
-		});
-	});
-		
+    });
+  });
+
   EL_closeModalBtn.addEventListener('click', () => {
-		document.body.style.overflow = 'auto';
+    document.body.style.overflow = 'auto';
     EL_modal.style.display = 'none';
   });
 
-	ymaps.ready(init);
+  ymaps.ready(init);
+};
+
+const footerMenuHandler = () => {
+  const EL_footerBtn = document.querySelectorAll('.js-footer-title');
+
+  if (!EL_footerBtn) return;
+
+  EL_footerBtn.forEach((element) => {
+    element.addEventListener('click', () => {
+      element.classList.toggle('open');
+    });
+  });
 };
 
 addEventListener('DOMContentLoaded', () => {
@@ -309,4 +321,5 @@ addEventListener('DOMContentLoaded', () => {
   selectPaymentVariants();
   customSelectHandler();
   mapModal();
+  footerMenuHandler();
 });
