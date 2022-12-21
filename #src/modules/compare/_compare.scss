@@ -7,6 +7,7 @@
   .row-flex {
     flex-wrap: nowrap;
     overflow: hidden;
+    margin-right: -35px;
   }
 
   .col-3 {
@@ -30,16 +31,38 @@
   }
 
   .col-9 {
+    cursor: ew-resize;
     position: relative;
     overflow: hidden;
     overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      display: none;
+      width: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+      display: none;
+      width: 0;
+    }
+    
+    &::-webkit-scrollbar-button {
+      display: none;
+      width: 0;
+      height: 0;
+    }
   }
 
   &__card-item {
     margin-right: 20px;
 
     .card-item {
-      width: 314px;
+      width: 336px;
       margin-bottom: 87px;
     }
 

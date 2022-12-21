@@ -1395,6 +1395,66 @@ a:hover {
   display: block;
 }
 
+.question {
+  position: relative;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.question:hover .question__tooltip {
+  display: block;
+}
+
+.question:hover::before {
+  display: block;
+}
+
+.question::before {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 2px;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 17px;
+  border-left-width: 17px;
+  border-bottom: 12px solid #ffffff;
+}
+
+.question__tooltip {
+  display: none;
+  position: absolute;
+  top: 28px;
+  left: -168px;
+  z-index: 3;
+  width: 311px;
+  padding: 23px 26px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: #424242;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+}
+
+.question__tooltip a {
+  display: block;
+  margin-top: 8px;
+  color: #ff6700;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3346,6 +3406,7 @@ a:hover {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow: hidden;
+  margin-right: -35px;
 }
 
 .compare .col-3 {
@@ -3366,9 +3427,31 @@ a:hover {
 }
 
 .compare .col-9 {
+  cursor: ew-resize;
   position: relative;
   overflow: hidden;
   overflow-x: auto;
+}
+
+.compare .col-9::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
+.compare .col-9::-webkit-scrollbar-thumb {
+  display: none;
+  width: 0;
+}
+
+.compare .col-9::-webkit-scrollbar-track {
+  display: none;
+  width: 0;
+}
+
+.compare .col-9::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .compare__card-item {
@@ -3376,7 +3459,7 @@ a:hover {
 }
 
 .compare__card-item .card-item {
-  width: 314px;
+  width: 336px;
   margin-bottom: 87px;
 }
 
