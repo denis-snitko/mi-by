@@ -3,6 +3,8 @@ const sliders = () => {
   cardPromotionSwiper.forEach((el) => {
     new Swiper(el, {
       el: el.querySelector('.card__promotion-swiper'),
+      cssMode: true,
+      mousewheel: true,
       pagination: {
         el: el.querySelector('.swiper-pagination'),
         type: 'fraction',
@@ -99,7 +101,8 @@ const sliders = () => {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
-
+      cssMode: true,
+      mousewheel: true,
       breakpoints: {
         768: {
           slidesPerView: 2,
@@ -116,6 +119,24 @@ const sliders = () => {
         nextEl: el.nextElementSibling,
       },
     });
+  });
+
+  new Swiper('.header__bottom-menu--swiper', {
+    slidesPerView: 9,
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    loop: true,
+    cssMode: true,
+    mousewheel: true,
+    breakpoints: {
+      768: {
+        spaceBetween: 43,
+      },
+    },
+    navigation: {
+      prevEl: '.swiper-button-prev-header',
+      nextEl: '.swiper-button-next-header',
+    },
   });
 };
 

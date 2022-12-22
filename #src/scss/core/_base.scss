@@ -234,21 +234,6 @@ a {
       position: relative;
     }
 
-    .search {
-      width: 100%;
-      padding: 12px 42px 12px 18px;
-      background-color: #f5f5f5;
-      border-radius: 2px;
-      border: none;
-
-      font-size: rem(14px);
-
-      color: $base-text-color;
-      &::placeholder {
-        color: #acacac;
-      }
-    }
-
     &-button {
       position: absolute;
       right: 14px;
@@ -309,6 +294,21 @@ a {
     .modal__content {
       height: 100%;
     }
+  }
+}
+
+.search {
+  width: 100%;
+  padding: 12px 42px 12px 18px;
+  background-color: #f5f5f5;
+  border-radius: 2px;
+  border: none;
+
+  font-size: rem(14px);
+
+  color: $base-text-color;
+  &::placeholder {
+    color: #acacac;
   }
 }
 
