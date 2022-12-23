@@ -145,11 +145,15 @@
     &-item {
       width: 37px;
       height: 24px;
-      background-color: #ffffff;
       opacity: 0.3;
       border-radius: 2px;
 
       transition: $base-transition;
+
+      img {
+        width: 37px;
+        height: 24px;
+      }
 
       &:not(:last-child) {
         margin-right: 16px;

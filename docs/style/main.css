@@ -1570,7 +1570,6 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: 1px solid red;
 }
 
 .header__top-menu li:not(:last-child) {
@@ -3980,12 +3979,16 @@ a:hover {
 .footer__payment-item {
   width: 37px;
   height: 24px;
-  background-color: #ffffff;
   opacity: 0.3;
   border-radius: 2px;
   -webkit-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+
+.footer__payment-item img {
+  width: 37px;
+  height: 24px;
 }
 
 .footer__payment-item:not(:last-child) {
